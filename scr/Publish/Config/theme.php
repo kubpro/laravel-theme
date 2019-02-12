@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'theme' => 'default',
+    'select' => 'default', //selected theme
 
-
-    'themes' => [
-        'default' => [
-            'views' => 'themes/default',
-            'assets' => 'themes/default',
-        ],
-    ]
+    /**
+     *  All themes
+     */
+    'default' => [
+        'views' => 'themes.default',
+        'assets' => 'themes/default',
+    ],
 ];
