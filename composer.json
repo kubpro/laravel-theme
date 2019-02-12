@@ -1,0 +1,12 @@
+{
+    "name": "kubpro/themes",
+    "description": "Laravel multi Themes Package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rauf Abbas",
+            "email": "rafo.abbas@gmail.com"
+        }
+    ],
+    "require": {}
+}
