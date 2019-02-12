@@ -35,7 +35,7 @@ APP_THEME=default
 
 
 -----------
-Theme has many features to help you get started with Laravel
+### Theme has many features to help you get started with Laravel
 
 -----------
 ~~~php
@@ -52,7 +52,7 @@ return thview('welcome',compact('data'));
 thasset()
 ~~~
 
-### The thasset function generates a URL for an asset using the current scheme of the request (HTTP or HTTPS):
+The thasset function generates a URL for an asset using the current scheme of the request (HTTP or HTTPS):
 
 ~~~php
 {{thasset("style.css")}}
@@ -76,4 +76,20 @@ if($check){
 }else{
     echo "error";
 }
+~~~
+
+-----------
+Adding themes Example : config/theme.php
+
+~~~php
+'default' => [
+        'views' => 'themes.default',
+        'assets' => 'themes/default',
+    ],
+
+//addnew theme
+'newtheme' => [
+    'views' => 'themes.newtheme',
+    'assets' => 'themes/newtheme',
+]
 ~~~
