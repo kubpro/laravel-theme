@@ -4,7 +4,7 @@
 To get the latest version of Theme simply require it in your `composer.json` file.
 
 ~~~
-"composer require" : "dev-master"
+"kubpro/theme" : "dev-master"
 ~~~
 
 
@@ -21,5 +21,19 @@ Once Theme is installed you need to register the service provider with the appli
 ~~~
 
 
+Publish config using artisan CLI.
+~~~
+php artisan vendor:publish --provider="Kubpro\Theme\Providers\ThemeServiceProvider"
+~~~
+
+
+Finding from both theme's view and application's view.
+~~~php
+
+return thview('welcome',compact('data'));
+
+~~~
+
+To check whether a theme exists.
 
 
