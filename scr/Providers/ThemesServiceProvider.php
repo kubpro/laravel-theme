@@ -1,9 +1,9 @@
 <?php
 
-namespace Kubpro\Themes\Providers;
+namespace Kubpro\Theme\Providers;
 use Illuminate\Support\ServiceProvider;
 
-class ThemesServiceProvider extends ServiceProvider
+class ThemeServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.

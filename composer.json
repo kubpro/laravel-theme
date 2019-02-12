@@ -3,7 +3,7 @@
     "description": "Laravel multi Themes Package",
     "keywords": ["themes", "views", "assets", "blade", "laravel-5", "package"],
     "license": "MIT",
-    "homepage": "https://github.com/kubpro/themes.git",
+    "homepage": "https://github.com/kubpro/theme.git",
     "authors": [
         {
             "name": "Rauf Abbas",
@@ -28,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kubpro\\Themes\\Providers\\ThemesServiceProvider"
+                "Kubpro\\Theme\\Providers\\ThemeServiceProvider"
             ]
         }
     },
