@@ -1,6 +1,6 @@
 <?php
 
-namespace Kubpro\Theme\Providers;
+namespace Kubpro\Themes\Providers;
 use Illuminate\Support\ServiceProvider;
 
 class ThemesServiceProvider extends ServiceProvider

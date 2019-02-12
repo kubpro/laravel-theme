@@ -1,5 +1,5 @@
 {
-    "name": "kubpro/theme",
+    "name": "kubpro/themes",
     "description": "Laravel multi Themes Package",
     "keywords": ["themes", "views", "assets", "blade", "laravel-5", "package"],
     "license": "MIT",
@@ -28,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kubpro\\Theme\\Providers\\ThemesServiceProvider"
+                "Kubpro\\Themes\\Providers\\ThemesServiceProvider"
             ]
         }
     },
