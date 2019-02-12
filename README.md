@@ -33,18 +33,32 @@ Add to .env file
 APP_THEME=default
 ~~~
 
+
+## Usage
+Theme has many features to help you get started with Laravel
+
+- [thview()](#thview())
+- [thasset()](#thasset())
+- [thchange()](#thchange())
+
+
+### thview() 
+
 The thview function retrieves theme's view instance:
 ~~~php
 $data = ['1',2];
 return thview('welcome',compact('data'));
 ~~~
 
+### thasset()
 
 The thasset function generates a URL for an asset using the current scheme of the request (HTTP or HTTPS):
 
 ~~~php
 {{thasset("style.css")}}
 ~~~
+
+### thchange()
 
 The thchange function using to  change theme from .env:
 
