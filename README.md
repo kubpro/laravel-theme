@@ -33,21 +33,30 @@ Add to .env file
 APP_THEME=default
 ~~~
 
-Finding from both theme's view and application's view.
+The thview function retrieves theme's view instance:
 ~~~php
 $data = ['1',2];
-
 return thview('welcome',compact('data'));
 ~~~
 
 
-Add to asset blade
+The thasset function generates a URL for an asset using the current scheme of the request (HTTP or HTTPS):
 
 ~~~php
 {{thasset("style.css")}}
 ~~~
 
+The thchange function using to  change theme from .env:
 
 
+~~~php
+$themename = 'themedemo'; //theme name
 
+$check = thchange($themename); //change function
 
+if($check){
+    echo "success";
+}else{
+    echo "error";
+}
+~~~
