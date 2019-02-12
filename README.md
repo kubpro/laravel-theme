@@ -27,13 +27,26 @@ php artisan vendor:publish --provider="Kubpro\Theme\Providers\ThemeServiceProvid
 ~~~
 
 
-Finding from both theme's view and application's view.
-~~~php
-
-return thview('welcome',compact('data'));
+Add to .env file 
 
 ~~~
+APP_THEME=default
+~~~
 
-To check whether a theme exists.
+Finding from both theme's view and application's view.
+~~~php
+$data = ['1',2];
+
+return thview('welcome',compact('data'));
+~~~
+
+
+Add to asset blade
+
+~~~php
+{{thasset("style.css")}}
+~~~
+
+
 
 
