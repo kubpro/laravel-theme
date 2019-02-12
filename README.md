@@ -52,7 +52,7 @@ return thview('welcome',compact('data'));
 thasset()
 ~~~
 
-The thasset function generates a URL for an asset using the current scheme of the request (HTTP or HTTPS):
+### The thasset function generates a URL for an asset using the current scheme of the request (HTTP or HTTPS):
 
 ~~~php
 {{thasset("style.css")}}
