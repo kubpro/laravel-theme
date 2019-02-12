@@ -44,20 +44,23 @@ if (! function_exists('thconfig')) {
         $theme = env('KUB_THEME', config('theme.select'));
         if ($type=='view'){
 
-            $views = "theme.".$theme.".views";
-            $views= config($views).".".$value;
+
+            $views= config("theme.".$theme.".views").".".$value;
 
             return $views;
 
         }elseif($type=='asset'){
 
-            $asset = "theme.".$theme.".assets";
-            $asset = config($asset)."/".$value;
+
+            $asset = config("theme.".$theme.".assets")."/".$value;
 
             return $asset;
         }
     }
 }
+
+
+
 
 
 
