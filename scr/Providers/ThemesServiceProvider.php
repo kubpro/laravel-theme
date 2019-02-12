@@ -1,6 +1,6 @@
 <?php
 
-namespace Kubpro\Themes\Providers;
+namespace Kubpro\Theme\Providers;
 use Illuminate\Support\ServiceProvider;
 
 class ThemesServiceProvider extends ServiceProvider
@@ -42,5 +42,7 @@ class ThemesServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../Publish/Views' => base_path('resources/views/themes/default'),
         ], 'theme');
+
     }
+
 }

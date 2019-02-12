@@ -41,7 +41,7 @@ if (! function_exists('thconfig')) {
      */
     function thconfig($type,$value = null){
 
-        $theme = env('KUB_THEME', config('theme.select'));
+        $theme = env('APP_THEME', config('theme.select'));
         if ($type=='view'){
 
 
@@ -58,6 +58,42 @@ if (! function_exists('thconfig')) {
         }
     }
 }
+
+
+
+
+if (! function_exists('thchange')) {
+
+    /**
+     * @param $name
+     * @return bool
+     */
+    function thchange($name){
+        //env file path
+        $path = app()->environmentFilePath();
+
+
+        $key = 'APP_THEME';
+
+        $escaped = preg_quote('='.env($key), '/');
+
+        $file = file_put_contents($path, preg_replace(
+            "/^{$key}{$escaped}/m",
+            "{$key}={$name}",
+            file_get_contents($path)
+        ));
+
+        if ($file){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
+
+
+
+
 
 
 
