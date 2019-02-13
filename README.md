@@ -4,7 +4,7 @@
 To get the latest version of Theme simply require it in your `composer.json` file.
 
 ~~~
-"kubpro/theme" : "dev-master"
+"kubpro/theme" : "0.1.0" or composer require kubpro/theme
 ~~~
 
 
