@@ -16,6 +16,7 @@ if (! function_exists('thview')) {
     }
 }
 
+
 if (! function_exists('thasset')) {
 
     /**
